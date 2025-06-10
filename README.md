@@ -70,15 +70,8 @@ terraform destroy
 Contributing
 Contributions are welcome! Please open issues or submit pull requests for improvements, bug fixes, or new features.
 
-License
-This project is licensed under the MIT License. See LICENSE for details.
-
 Support
 For questions, issues, or feature requests, please open an issue in this repository.
 
 Built with Terraform and a commitment to infrastructure excellence.
 
----
-
-**Summary:**  
-Your file is already strong, but the above improvements will make it even more professional and user-friendly for GitHub and open source collaboration. If you want, you can use the improved version above!
