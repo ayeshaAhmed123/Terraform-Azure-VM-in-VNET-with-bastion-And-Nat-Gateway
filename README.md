@@ -15,26 +15,6 @@ This project provides a robust, modular Infrastructure as Code (IaC) solution us
 - [License](#license)
 - [Support](#support)
 
-## Project Structure
-
-The project follows a modular approach, breaking down infrastructure components into reusable and independently manageable modules. This structure enhances clarity, reusability, and collaboration across teams.
-
-.
-├── main.tf 
-├── variables.tf 
-├── outputs.tf
-├── terraform.tfvars
-├── .gitignore
-├── README.md 
-└── modules/ 
-   ├── compute/
-   │    └── ... (VM-related resources)
-   ├── network/ 
-   │    └── ... (VNet, subnets, NAT, etc.) 
-   └── security/ 
-        ├── firewall_rules.tf  # (Firewall configurations)
-        └── ... (NSGs, firewalls, etc.)
-
 ### Module Breakdown
 
 - **compute_module**: Handles the provisioning and management of virtual machines and related compute resources.
