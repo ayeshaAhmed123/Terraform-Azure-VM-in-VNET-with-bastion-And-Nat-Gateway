@@ -53,12 +53,15 @@ Adopting a modular structure in Terraform projects offers several key advantages
 
 
 2. **Initialize Terraform:**
+  ```sh
 terraform init
-4. **Plan and apply:**
+3. **Plan and apply:**
+  ```sh
 terraform plan
 terraform apply
 
 4. **Destroy resources (when needed):**
+  ```sh
 terraform destroy
 
 Contributing
