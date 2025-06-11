@@ -15,18 +15,6 @@ This project provides a robust, modular Infrastructure as Code (IaC) solution us
 - [License](#license)
 - [Support](#support)
 
-## Project Structure
-
-The project follows a modular approach, breaking down infrastructure components into reusable and independently manageable modules. This structure enhances clarity, reusability, and collaboration across teams.
-
-
-
-
-
-
-. ├── main.tf ├── variables.tf ├── outputs.tf ├── terraform.tfvars ├── .gitignore ├── README.md └── modules/ ├── compute/ │ └── ... (VM-related resources) ├── network/ │ └── ... (VNet, subnets, NAT, etc.) └── security/ └── ... (NSGs, firewalls, etc.)
-
-
 ### Module Breakdown
 
 - **compute_module**: Handles the provisioning and management of virtual machines and related compute resources.
@@ -65,26 +53,25 @@ Adopting a modular structure in Terraform projects offers several key advantages
 
 
 2. **Initialize Terraform:**
+  ```sh
 terraform init
-4. **Plan and apply:**
+```
+3. **Plan and apply:**
+  ```sh
 terraform plan
 terraform apply
+```
 
 4. **Destroy resources (when needed):**
+  ```sh
 terraform destroy
+```
 
 Contributing
 Contributions are welcome! Please open issues or submit pull requests for improvements, bug fixes, or new features.
-
-License
-This project is licensed under the MIT License. See LICENSE for details.
 
 Support
 For questions, issues, or feature requests, please open an issue in this repository.
 
 Built with Terraform and a commitment to infrastructure excellence.
 
----
-
-**Summary:**  
-Your file is already strong, but the above improvements will make it even more professional and user-friendly for GitHub and open source collaboration. If you want, you can use the improved version above!
