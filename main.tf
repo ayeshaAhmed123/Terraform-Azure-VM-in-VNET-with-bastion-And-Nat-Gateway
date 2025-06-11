@@ -18,9 +18,15 @@ module "compute_module" {
    vm_user=var.vm_user
 
 }
+resource "azurerm_network_security_group" "tera-demo-nsg" {
+  name                = "tera-demo-nsg"
+  location            = azurerm_resource_group.tera-rg.location
+  resource_group_name = azurerm_resource_group.tera-rg.name
+}
 module "security_module" {
    source = "./modules/security"   
    location= azurerm_resource_group.tera-rg.location
    rg_name= azurerm_resource_group.tera-rg.name
    private_subnet_id= module.network_module.private_subnet_id
+   nsg_id= azurerm_network_security_group.tera-demo-nsg.id
 }

@@ -24,3 +24,9 @@ resource "azurerm_nat_gateway_public_ip_association" "pulic-ip-gateway-associati
   nat_gateway_id       = azurerm_nat_gateway.nat-tera-gateway.id
   public_ip_address_id = azurerm_public_ip.gateway_public_ip.id
 }
+
+
+resource "azurerm_subnet_network_security_group_association" "nsg-association" {
+  subnet_id                 = var.private_subnet_id
+  network_security_group_id = var.nsg_id
+}
